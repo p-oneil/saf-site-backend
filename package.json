@@ -27,7 +27,7 @@
     "uuid": "61e8a3da-dbc1-4656-ba9a-d9c78e99ef5c"
   },
   "engines": {
-    "node": "^18"
+    "node": "18.20.3"
   },
   "license": "Apache-2.0",
   "devDependencies": {
@@ -42,5 +42,7 @@
     ],
     "testEnvironment": "node"
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@1.22.22",
+  "main": "index.js",
+  "repository": "git@github.com:p-oneil/saf-site-backend.git"
 }

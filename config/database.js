@@ -15,9 +15,10 @@ module.exports = ({ env }) => {
         user: parsedUrl ? parsedUrl.user : env("DATABASE_USERNAME"),
         password: parsedUrl ? parsedUrl.password : env("DATABASE_PASSWORD"),
         schema: env("DATABASE_SCHEMA", "public"), // Not required
-        ssl: {
-          rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
-        },
+        ssl: env("DATABASE_SSL", false), //ADDED 
+        // ssl: {
+        //   rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
+        // },
       },
       debug: false,
     },
